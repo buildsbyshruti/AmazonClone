@@ -1,0 +1,28 @@
+.info-page {
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.info-card {
+  background: #fff;
+  border: 1px solid #d5d9d9;
+  padding: 32px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.info-card h1 {
+  color: #0f1111;
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+
+.info-card p {
+  color: #222;
+  font-size: 17px;
+  line-height: 1.7;
+}

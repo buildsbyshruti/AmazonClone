@@ -1,0 +1,9 @@
+{
+  "name": "amazon-clone-root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build && mkdir -p ../api/public && cp -r dist/* ../api/public && cd ../api && npm install"
+  }
+}

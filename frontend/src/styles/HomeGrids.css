@@ -1,0 +1,155 @@
+.homepage-content {
+  margin-top: -200px;
+  position: relative;
+  z-index: 10;
+}
+
+.home-grids-outer {
+  max-width: 1500px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+}
+
+.home-grids-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .home-grids-row {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .homepage-content {
+    margin-top: -100px;
+  }
+  .home-grids-outer {
+    padding: 0 12px;
+  }
+  .home-grids-row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-content {
+    margin-top: -60px;
+  }
+  .home-grids-outer {
+    margin: 0 auto 16px;
+    padding: 0 10px;
+  }
+  .home-grids-row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-content {
+    margin-top: -40px;
+  }
+  .home-grids-outer {
+    margin: 0 auto 12px;
+    padding: 0 8px;
+  }
+  .home-grids-row {
+    grid-gap: 8px;
+  }
+}
+
+.home-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1515px;
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+.home-card-amazon.quad-card {
+  background: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.quad-card h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.quad-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  flex: 1;
+}
+
+.quad-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.quad-item img {
+  width: 100%;
+  aspect-ratio: 186/116;
+  object-fit: cover;
+}
+
+.quad-item span {
+  font-size: 11px;
+  color: #111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #007185;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+  color: #c45500;
+}
+
+@media (max-width: 1200px) {
+  .home-row {
+     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .home-row {
+     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .home-row {
+     grid-template-columns: 1fr;
+     padding: 10px;
+  }
+  .quad-card h3 {
+    font-size: 18px;
+  }
+  .quad-grid {
+    gap: 8px;
+  }
+}

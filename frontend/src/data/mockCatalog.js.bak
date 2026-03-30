@@ -1,0 +1,539 @@
+export const headerMenuCategories = [
+  { label: "All", key: "all" },
+  { label: "Fresh", key: "fresh" },
+  { label: "Amazon miniTV", key: "mx_player" },
+  { label: "Sell", key: "sell" },
+  { label: "Best Sellers", key: "best_sellers" },
+  { label: "Mobiles", key: "mobiles" },
+  { label: "Today's Deals", key: "deals" },
+  { label: "Electronics", key: "electronics" },
+  { label: "Prime", key: "prime" },
+  { label: "New Releases", key: "new_releases" },
+  { label: "Home & Kitchen", key: "home_kitchen" },
+];
+
+export const mockProducts = [
+  {
+    id: 1001,
+    name: "Fresh Farm Apples - 1 kg",
+    category: "Fresh",
+    categoryKey: "fresh",
+    price: 159,
+    discount: 20,
+    reviews: 318,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1002,
+    name: "Fresh Spinach Bundle",
+    category: "Fresh",
+    categoryKey: "fresh",
+    price: 49,
+    discount: 15,
+    reviews: 92,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1003,
+    name: "Smartphone 5G 8GB/128GB",
+    category: "Mobiles",
+    categoryKey: "mobiles",
+    price: 16999,
+    discount: 24,
+    reviews: 2110,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1004,
+    name: "Pro Camera Smartphone",
+    category: "Mobiles",
+    categoryKey: "mobiles",
+    price: 29999,
+    discount: 18,
+    reviews: 1408,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1005,
+    name: "Noise Cancelling Earbuds",
+    category: "Electronics",
+    categoryKey: "electronics",
+    price: 2499,
+    discount: 35,
+    reviews: 678,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1006,
+    name: "Ultra HD Smart TV 43 inch",
+    category: "Electronics",
+    categoryKey: "electronics",
+    price: 27999,
+    discount: 28,
+    reviews: 843,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1007,
+    name: "Cotton Casual T-Shirt",
+    category: "Fashion",
+    categoryKey: "fashion",
+    price: 599,
+    discount: 50,
+    reviews: 1209,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1008,
+    name: "Slim Fit Denim Jeans",
+    category: "Fashion",
+    categoryKey: "fashion",
+    price: 1299,
+    discount: 42,
+    reviews: 932,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1009,
+    name: "Non-stick Cookware Set",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 1899,
+    discount: 45,
+    reviews: 711,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1010,
+    name: "Vacuum Flask Bottle",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 699,
+    discount: 39,
+    reviews: 502,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1025,
+    name: "Glass Mixing Bowls - Set of 3",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 849,
+    discount: 25,
+    reviews: 430,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1026,
+    name: "Stainless Steel Serving Spoons",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 499,
+    discount: 30,
+    reviews: 210,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1027,
+    name: "Ceramic Coffee Mugs - 4pcs",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 1299,
+    discount: 40,
+    reviews: 890,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1028,
+    name: "Wooden Cutting Board",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 599,
+    discount: 20,
+    reviews: 156,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1029,
+    name: "Electric Kettle 1.5L",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 999,
+    discount: 50,
+    reviews: 2310,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1030,
+    name: "Cotton Tablecloth - Floral",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 749,
+    discount: 15,
+    reviews: 88,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1031,
+    name: "Non-stick Baking Tray",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 459,
+    discount: 10,
+    reviews: 320,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1032,
+    name: "Silicone Spatula Set",
+    category: "Home & Kitchen",
+    categoryKey: "home_kitchen",
+    price: 349,
+    discount: 12,
+    reviews: 445,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1011,
+    name: "Kitchen Knife Set",
+    category: "Best Sellers",
+    categoryKey: "best_sellers",
+    price: 1099,
+    discount: 31,
+    reviews: 1500,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1012,
+    name: "Premium Yoga Mat",
+    category: "Best Sellers",
+    categoryKey: "best_sellers",
+    price: 899,
+    discount: 33,
+    reviews: 640,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1013,
+    name: "Bluetooth Neckband",
+    category: "Today's Deals",
+    categoryKey: "deals",
+    price: 1199,
+    discount: 60,
+    reviews: 389,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1014,
+    name: "Wireless Charging Pad",
+    category: "Today's Deals",
+    categoryKey: "deals",
+    price: 799,
+    discount: 48,
+    reviews: 274,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1015,
+    name: "New Release Smartwatch",
+    category: "New Releases",
+    categoryKey: "new_releases",
+    price: 3499,
+    discount: 12,
+    reviews: 167,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1016,
+    name: "Mini Espresso Machine",
+    category: "New Releases",
+    categoryKey: "new_releases",
+    price: 6999,
+    discount: 15,
+    reviews: 84,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1017,
+    name: "Prime Video Family Pack",
+    category: "Prime",
+    categoryKey: "prime",
+    price: 1499,
+    discount: 25,
+    reviews: 2670,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1018,
+    name: "Prime Gaming Starter Bundle",
+    category: "Prime",
+    categoryKey: "prime",
+    price: 999,
+    discount: 20,
+    reviews: 440,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1019,
+    name: "Merchant POS Device",
+    category: "Amazon Pay",
+    categoryKey: "amazon_pay",
+    price: 2999,
+    discount: 10,
+    reviews: 90,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1020,
+    name: "Recharge & Bill Cashback Pack",
+    category: "Amazon Pay",
+    categoryKey: "amazon_pay",
+    price: 399,
+    discount: 35,
+    reviews: 340,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1021,
+    name: "Seller Starter Packaging Kit",
+    category: "Sell",
+    categoryKey: "sell",
+    price: 749,
+    discount: 22,
+    reviews: 54,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1022,
+    name: "Catalog Photography Light Box",
+    category: "Sell",
+    categoryKey: "sell",
+    price: 1299,
+    discount: 27,
+    reviews: 71,
+    image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1023,
+    name: "Customer Service Headset",
+    category: "Customer Service",
+    categoryKey: "customer_service",
+    price: 1599,
+    discount: 30,
+    reviews: 124,
+    image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+    ]
+  },
+  {
+    id: 1024,
+    name: "MX Player Streaming Stick",
+    category: "MX Player",
+    categoryKey: "mx_player",
+    price: 2199,
+    discount: 26,
+    reviews: 203,
+    image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80",
+    images: [
+      { image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+      { image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+    ]
+  },
+
+  { id: 2001, name: "Premium Cushion Cover (Set of 2)", category: "Home & Kitchen", categoryKey: "home_kitchen", price: 499, discount: 10, reviews: 156, image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+  { id: 2002, name: "Decorative Flower Vase", category: "Home & Kitchen", categoryKey: "home_kitchen", price: 899, discount: 20, reviews: 89, image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+  { id: 2003, name: "Smart Air Conditioner - 1.5 Ton", category: "Electronics", categoryKey: "electronics", price: 34999, discount: 15, reviews: 245, image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+  { id: 2004, name: "Double Door Refrigerator", category: "Electronics", categoryKey: "electronics", price: 28999, discount: 12, reviews: 188, image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+  { id: 2005, name: "Convection Microwave Oven", category: "Electronics", categoryKey: "electronics", price: 12499, discount: 18, reviews: 312, image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+  { id: 2006, name: "Front Load Washing Machine", category: "Electronics", categoryKey: "electronics", price: 24999, discount: 20, reviews: 423, image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+  { id: 2007, name: "Men's Casual Shirt", category: "Fashion", categoryKey: "fashion", price: 899, discount: 50, reviews: 654, image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+  { id: 2008, name: "Sports Running Shoes", category: "Fashion", categoryKey: "fashion", price: 1999, discount: 30, reviews: 876, image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+  { id: 2009, name: "Leather Laptop Bag", category: "Fashion", categoryKey: "fashion", price: 2499, discount: 25, reviews: 143, image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+  { id: 2010, name: "Complete Home Cleaning Kit", category: "Home & Kitchen", categoryKey: "home_kitchen", price: 1299, discount: 35, reviews: 298, image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+  { id: 2011, name: "Modern Bathroom Set", category: "Home & Kitchen", categoryKey: "home_kitchen", price: 2499, discount: 15, reviews: 67, image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+  { id: 2012, name: "Multipurpose Power Tool Kit", category: "Home & Kitchen", categoryKey: "home_kitchen", price: 3499, discount: 40, reviews: 512, image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+  { id: 2013, name: "Decorative Peel & Stick Wallpaper", category: "Home & Kitchen", categoryKey: "home_kitchen", price: 799, discount: 10, reviews: 45, image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+  { id: 2014, name: "Flagship Smartphone 12GB/256GB", category: "Mobiles", categoryKey: "mobiles", price: 49999, discount: 10, reviews: 1243, image_url: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=400&q=80" },
+  { id: 2015, name: "Budget Smartphone 4GB/64GB", category: "Mobiles", categoryKey: "mobiles", price: 8999, discount: 20, reviews: 567, image_url: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?w=400&q=80" },
+  { id: 2016, name: "Fast Charging Adapter 65W", category: "Electronics", categoryKey: "electronics", price: 1499, discount: 30, reviews: 890, image_url: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&q=80" },
+  { id: 2017, name: "Modular Home Storage Units", category: "Home & Kitchen", categoryKey: "home_kitchen", price: 3999, discount: 20, reviews: 231, image_url: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" },
+  { id: 2018, name: "Smart LED Lighting System", category: "Home & Kitchen", categoryKey: "home_kitchen", price: 1899, discount: 15, reviews: 412, image_url: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80" },
+  { id: 2019, name: "Classic Analogue Watch", category: "Fashion", categoryKey: "fashion", price: 5499, discount: 45, reviews: 890, image_url: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=400&q=80" },
+];
+
+export const featuredRows = [
+  {
+    id: "launchpad",
+    title: "Up to 60% off | Cookware, kitchen tool & more",
+    categoryKeys: ["home_kitchen", "best_sellers", "deals"],
+  },
+  {
+    id: "electronics",
+    title: "Latest in electronics & accessories",
+    categoryKeys: ["electronics", "mobiles", "new_releases"],
+  },
+  {
+    id: "everyday",
+    title: "Daily essentials | Fresh picks for your home",
+    categoryKeys: ["fresh", "home_kitchen", "fashion"],
+  },
+  {
+    id: "trending",
+    title: "Trending now | Most-loved products",
+    categoryKeys: ["best_sellers", "prime", "deals"],
+  },
+];
